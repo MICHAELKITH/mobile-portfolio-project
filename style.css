@@ -1,0 +1,149 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap";
+
+:root {
+  --main-bg-color: #fff;
+  --normal-text-color: #344563;
+  --gray-background-color: #fff;
+  --container-bg: #e5e5e5;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #7f8cff;
+  background-color: var(--container-bg);
+}
+
+header {
+  width: 100%;
+  height: 48px;
+  top: 44px;
+  padding: 3%;
+  background-color: var(--main-bg-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8 4%;
+  margin-top: 15px;
+}
+
+.logo {
+  display: flex;
+  align-self: flex-end;
+  width: 76px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bar-toggle {
+  top: 0.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 21px;
+  color: #6070ff;
+}
+
+.bar-toggle > i {
+  font-size: 28px;
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.bar-toggle > i:hover {
+  color: #172b4d;
+}
+
+.small-container > h1 {
+  font-size: 2.5em;
+  margin-top: 6.5rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  font-style: normal;
+  color: #172b4d;
+}
+
+.small-container .paragraph-text {
+  color: var(--normal-text-color);
+  width: 327px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  margin-top: -20px;
+}
+
+.small-container {
+  border-bottom-left-radius: 85px;
+  width: 100%;
+  height: 618px;
+}
+
+.small-container,
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.9rem;
+  background-image: url(./images/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.about {
+  border-top-right-radius: 132px;
+  margin-top: 180px;
+  padding-top: 3%;
+}
+
+.small-container .social-link {
+  font-weight: 500;
+  color: #7f8cff;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-style: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.small-container .social-link a:hover {
+  background-color: black;
+}
+
+.social-media-link {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+  padding-inline-start: 0;
+  padding-bottom: 16px;
+  font-size: larger;
+}
